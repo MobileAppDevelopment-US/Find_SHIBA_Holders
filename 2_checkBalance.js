@@ -5,7 +5,6 @@ const fs = require('fs');
 var web3 = new Web3('https://mainnet.infura.io/v3/ff9c17ace878499cbc561f990e98998a')
 
 const getArray = async () => { 
-    var uniqueArraydataArray = []
     var EventTestContract = new web3.eth.Contract(IERC20ABI, "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce")
     try {
         const data = fs.readFileSync('allAdresses.txt', 'utf8')
